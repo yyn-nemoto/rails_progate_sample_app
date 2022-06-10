@@ -1,0 +1,8 @@
+<h1>投稿一覧</h1>
+<%= link_to "TOPへ", root_path %>
+<% @posts.each do |post| %>
+    <ul>
+      <li> <%= "name: #{post.name}" %> </li>
+      <li> <%= "content: #{post.content}" %> </li>
+    </ul>
+<% end %>  
